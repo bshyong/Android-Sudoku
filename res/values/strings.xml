@@ -2,5 +2,8 @@
 <resources>
     <string name="hello">Hello World, Sudoku!</string>
     <string name="app_name">Sudoku</string>
-    <string name="continue_button">Continue</string>
+    <string name="menu_continue_button">Continue</string>
+    <string name="menu_new_button">New</string>
+    <string name="menu_about_button">About</string>
+    <string name="menu_exit_button">Exit</string>
 </resources>

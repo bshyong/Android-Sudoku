@@ -7,10 +7,22 @@
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" 
-    android:text="@string/hello"
+    android:text="@string/app_name"
     />
 <Button
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="@string/continue_button" />
+    android:text="@string/menu_continue_button" />
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/menu_new_button" />
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/menu_about_button" />
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/menu_exit_button" />
 </LinearLayout>
