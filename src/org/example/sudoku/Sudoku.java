@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 // need to implement OnClickListener because this class is 
 // passed to the OnClickListener method
@@ -35,5 +38,15 @@ public class Sudoku extends Activity implements OnClickListener {
 			startActivity(i);
 			break;
 		}
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.settings:
+			startActivity(new Intent(this, Prefts.class));
+			return true;
+		}
+		return false;
 	}
 }

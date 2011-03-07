@@ -12,4 +12,11 @@
     each row, each column, and each of the 3x3 boxes contains the digits
     1-9 exactly once.</string>
 <!--  The backslash at the beginning prevents a blank from appearing before the first word.  -->
+	<string name="menu_settings_label">Settings</string>
+	<string name="menu_settings_title">Game settings</string>
+	<string name="menu_settings_shortcut">s</string>
+	<string name="music_title">Music</string>
+	<string name="music_summer">Play background music</string>
+	<string name="hints_title">Hints</string>
+	<string name="hints_summary">Show hints during game</string>
 </resources>
