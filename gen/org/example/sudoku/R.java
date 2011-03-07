@@ -28,7 +28,8 @@ public final class R {
         public static final int main=0x7f030001;
     }
     public static final class string {
-        public static final int about_text=0x7f050006;
+        public static final int about_text=0x7f050007;
+        public static final int about_title=0x7f050006;
         public static final int app_name=0x7f050001;
         public static final int hello=0x7f050000;
         public static final int menu_about_button=0x7f050004;
