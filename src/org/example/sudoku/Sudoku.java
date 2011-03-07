@@ -31,6 +31,7 @@ public class Sudoku extends Activity implements OnClickListener {
 
     // need to define onClick method here 
     // because OnClickListener was implemented
+    @Override
 	public void onClick(View v) {
 		switch(v.getId()) {
 		case R.id.menu_about_button:
@@ -38,6 +39,14 @@ public class Sudoku extends Activity implements OnClickListener {
 			startActivity(i);
 			break;
 		}
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu){
+		super.onCreateOptionsMenu(menu);
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.menu, menu);
+		return true;
 	}
 	
 	@Override
