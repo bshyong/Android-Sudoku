@@ -44,7 +44,7 @@ public class Sudoku extends Activity implements OnClickListener {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.settings:
-			startActivity(new Intent(this, Prefts.class));
+			startActivity(new Intent(this, Prefs.class));
 			return true;
 		}
 		return false;
