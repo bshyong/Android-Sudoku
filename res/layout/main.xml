@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/app_name"
-    />
-<Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/menu_continue_button" />
-<Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/menu_new_button" />
-<Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/menu_about_button" />
-<Button
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/menu_exit_button" />
+    android:padding="30dip">
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:layout_gravity="center" >
+		<TextView  
+		    android:layout_width="wrap_content" 
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center"
+		    android:layout_marginBottom="25dip"
+		    android:textSize="24sp"
+		    android:text="@string/app_name"
+		    />
+<!--	'sp' allows textsize to scale with user's font size	    -->
+<!--	@+id allows creation of resource ID instead
+		of referencing a resource ID defined somewhere else	    -->
+		<Button
+			android:id="@+id/menu_continue_button"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/menu_continue_button"/>
+		<Button
+			android:id="@+id/menu_new_button"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/menu_new_button" />
+		<Button
+			android:id="@+id/menu_about_button"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/menu_about_button" />
+		<Button
+			android:id="@+id/menu_exit_button"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/menu_exit_button" />
+	</LinearLayout>
 </LinearLayout>
