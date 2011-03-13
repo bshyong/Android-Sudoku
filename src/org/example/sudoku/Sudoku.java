@@ -8,6 +8,9 @@ import android.view.View.OnClickListener;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.util.Log;
 
 // need to implement OnClickListener because this class is 
 // passed to the OnClickListener method
@@ -38,8 +41,31 @@ public class Sudoku extends Activity implements OnClickListener {
 			Intent i = new Intent(this, About.class);
 			startActivity(i);
 			break;
+		case R.id.menu_new_button:
+			openNewGameDialog();
+			break;
 		}
 	}
+    
+    private static final String TAG = "Sudoku";
+    
+    private void openNewGameDialog() {
+    	new AlertDialog.Builder(this)
+    		.setTitle(R.string.difficulty_level)
+    		.setItems(R.array.difficulty, 
+    				new DialogInterface.OnClickListener(){
+    			public void onClick(DialogInterface dialoginterface,
+    					int i) {
+    				startGame(i);
+    			}
+    		})
+    		.show();
+    }
+    
+    private void startGame(int i){
+    	Log.d(TAG, "clicked on " + i);
+    	//start game here
+    }
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu){
