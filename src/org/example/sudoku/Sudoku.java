@@ -44,6 +44,9 @@ public class Sudoku extends Activity implements OnClickListener {
 		case R.id.menu_new_button:
 			openNewGameDialog();
 			break;
+		case R.id.menu_exit_button:
+			finish();
+			break;
 		}
 	}
     
@@ -64,7 +67,9 @@ public class Sudoku extends Activity implements OnClickListener {
     
     private void startGame(int i){
     	Log.d(TAG, "clicked on " + i);
-    	//start game here
+    	Intent intent = new Intent(Sudoku.this, Game.class);
+    	intent.putExtra(Game.KEY_DIFFICULTY, i);
+    	startActivity(intent);
     }
 	
 	@Override
